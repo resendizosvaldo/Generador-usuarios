@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+</head>
+
+<body>
+    <h1>GENERADOR DE USUARIOS RANDOM</h1>
+    <div id="app" class="new-user">
+        <img v-bind:src="foto" alt="foto perfil" :class="genero" id="foto-stilo">
+        <P class="parrafo-stilo">My name is:</P>
+        <h1>{{nombre}} {{apellido}}</h1>
+        <P class="parrafo-stilo">My email:</P>
+        <h3>{{email}}</h3>
+        <P class="parrafo-stilo">Country:</P>
+        <h3>{{location}}</h3>
+        <a v-on:click="cambiarUsuario() " class="button-style">Nuevo usuario random</a>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3 "></script>
+    <script src="/app.js "></script>
+</body>
+
+</html>
